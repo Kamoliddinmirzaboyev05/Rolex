@@ -36,6 +36,9 @@ background-color: #FCFCFC;
 .grayer-type.grayer-text{
   color: #bfbfbf;
 }
+.grayer-btn.grayerBtn{
+  background-color: #3D3D3D;
+}
 /* Light - dark mode end */
 
 .container {
