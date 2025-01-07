@@ -5,10 +5,13 @@ const boxes = document.querySelectorAll(".box-mode");
 const lighters = document.querySelectorAll(".lighter-type");
 const grayers = document.querySelectorAll(".grayer-type");
 const grayerBtns = document.querySelectorAll(".grayer-btn");
-var darkMode = false;
-modeBtn.addEventListener("click", () => {
-  if (darkMode == false) {
-    darkMode = true;
+let siteMode = localStorage.getItem("siteMode");
+console.log(siteMode);
+
+// autoDeter();
+function autoDeter() {
+  if (localStorage.getItem("siteMode") == "false") {
+    localStorage.setItem("siteMode", "true");
     body.classList.add("bg-dark");
     boxes.forEach((box) => {
       box.classList.add("box-dark");
@@ -25,7 +28,7 @@ modeBtn.addEventListener("click", () => {
       });
     });
   } else {
-    darkMode = false;
+    localStorage.setItem("siteMode", "false");
     body.classList.remove("bg-dark");
     boxes.forEach((box) => {
       box.classList.remove("box-dark");
@@ -41,8 +44,12 @@ modeBtn.addEventListener("click", () => {
     grayerBtns.forEach((grayerBtn) => {
       grayerBtn.classList.remove("grayerBtn");
     });
+    lighters.forEach((lighter) => {
+      lighter.classList.remove("lighter-text");
+    });
   }
-  lighters.forEach((lighter) => {
-    lighter.classList.remove("lighter-text");
-  });
+}
+const isMode = () => {};
+modeBtn.addEventListener("click", () => {
+  autoDeter();
 });

@@ -532,3 +532,18 @@ footer .container {
   text-align: center;
   padding: 20px 0;
 }
+
+@media (max-width: 480px){
+  .navlinks{
+    gap: 30px;
+  }
+  .links{
+    display: none;
+  }
+  .hero-img{
+    width: 250px;
+  }
+  .hero-img img{
+    width: 100%;
+  }
+}
