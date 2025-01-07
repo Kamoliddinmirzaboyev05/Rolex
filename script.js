@@ -6,12 +6,8 @@ const lighters = document.querySelectorAll(".lighter-type");
 const grayers = document.querySelectorAll(".grayer-type");
 const grayerBtns = document.querySelectorAll(".grayer-btn");
 let siteMode = localStorage.getItem("siteMode");
-console.log(siteMode);
-
-// autoDeter();
 function autoDeter() {
-  if (localStorage.getItem("siteMode") == "false") {
-    localStorage.setItem("siteMode", "true");
+  if (mode == "false") {
     body.classList.add("bg-dark");
     boxes.forEach((box) => {
       box.classList.add("box-dark");
@@ -28,7 +24,6 @@ function autoDeter() {
       });
     });
   } else {
-    localStorage.setItem("siteMode", "false");
     body.classList.remove("bg-dark");
     boxes.forEach((box) => {
       box.classList.remove("box-dark");
@@ -49,7 +44,15 @@ function autoDeter() {
     });
   }
 }
+var mode = localStorage.getItem("siteMode");
+autoDeter();
 const isMode = () => {};
 modeBtn.addEventListener("click", () => {
+  if (mode == "false") {
+    mode = "true";
+  } else {
+    mode = "false";
+  }
+  localStorage.setItem("siteMode", mode);
   autoDeter();
 });
