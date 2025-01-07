@@ -594,4 +594,51 @@ footer .container {
     line-height: 21px;
     padding-bottom: 24px;
   }
+
+  /* Mobiling section1 */
+
+  .section1 .container {
+    padding-top: 90px;
+    width: 100%;
+    text-align: center;
+  }
+  .sct-title h2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .block {
+    padding-top: 50px;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 30px;
+    position: relative;
+  }
+  .section2 .container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    justify-content: center;
+  }
+  .section2 .sct-title h2 {
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .sct-img img {
+    width: 100%;
+  }
+  .sct-text {
+    width: 100%;
+    margin-left: 0px;
+    padding-bottom: 80px;
+  }
+  .sct2-title {
+    font-size: 32px;
+    line-height: 42px;
+    padding-bottom: 40px;
+  }
+
+
+
+
 }
