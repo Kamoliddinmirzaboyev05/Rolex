@@ -5,7 +5,9 @@ const boxes = document.querySelectorAll(".box-mode");
 const lighters = document.querySelectorAll(".lighter-type");
 const grayers = document.querySelectorAll(".grayer-type");
 const grayerBtns = document.querySelectorAll(".grayer-btn");
-let siteMode = localStorage.getItem("siteMode");
+let siteMode = localStorage.getItem("siteMode")
+  ? localStorage.getItem("siteMode")
+  : "false";
 function autoDeter() {
   if (mode == "false") {
     body.classList.add("bg-dark");
