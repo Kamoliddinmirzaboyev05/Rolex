@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto";
-  /* transition: all 0.5s ease; */
+  transition: all 0.5s ease;
 }
 body {
   background-color: #fcfcfc;
@@ -189,6 +189,9 @@ nav .container {
   align-items: start;
   gap: 30px;
   position: relative;
+}
+.section1 .block {
+  height: 400px;
 }
 .box {
   width: 315px;
@@ -687,11 +690,11 @@ footer .container {
     padding: 50px 0;
   }
   .section5 .sct-title {
-   padding-bottom: 20px;
+    padding-bottom: 20px;
   }
 
   /* Styling section 6 */
-  
+
   .section6 {
     padding: 40px 0;
   }
@@ -700,7 +703,7 @@ footer .container {
     margin: 0 24px;
     display: flex;
     justify-content: center;
-    flex-direction: column  ;
+    flex-direction: column;
     align-items: center;
     gap: 50px;
   }
