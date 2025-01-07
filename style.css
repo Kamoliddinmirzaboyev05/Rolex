@@ -659,7 +659,79 @@ footer .container {
     flex-direction: column;
     position: relative;
   }
-  .box-img img{
+  .sct3-box h2 {
+    font-size: 13px;
+  }
+  .box-price {
+    font-size: 14px;
+  }
+  .box-img img {
     width: 100%;
+  }
+
+  /* Styling section 4 */
+
+  .section4 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 70px;
+  }
+  .sct4-img img {
+    width: 100%;
+  }
+
+  /* Styling section 5 */
+  .section5 {
+    padding: 50px 0;
+  }
+  .section5 .sct-title {
+   padding-bottom: 20px;
+  }
+
+  /* Styling section 6 */
+  
+  .section6 {
+    padding: 40px 0;
+  }
+  .section6 .container {
+    padding: 48px 24px;
+    margin: 0 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column  ;
+    align-items: center;
+    gap: 50px;
+  }
+  .subscribe-text {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .subscribe-text h2 {
+    font-size: 24px;
+    line-height: 28px;
+    width: 80%;
+    text-align: center;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    width: 100%;
+  }
+  form input {
+    padding: 20px 22px;
+    border: none;
+    background-color: #f0f0f0;
+    width: 300px;
+    outline: none;
   }
 }
