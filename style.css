@@ -613,6 +613,9 @@ footer .container {
     gap: 30px;
     position: relative;
   }
+
+  /* Styling section 2 */
+
   .section2 .container {
     padding-top: 50px;
     display: flex;
@@ -633,12 +636,30 @@ footer .container {
     padding-bottom: 80px;
   }
   .sct2-title {
-    font-size: 32px;
+    font-size: 26px;
+    width: 80%;
     line-height: 42px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 
-
-
-
+  /* Styling section 3 */
+  .section3 .block {
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .sct3-box {
+    width: 170px;
+    padding: 15px;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .box-img img{
+    width: 100%;
+  }
 }
