@@ -734,4 +734,16 @@ footer .container {
     width: 300px;
     outline: none;
   }
+
+  /* Styling footer section */
+
+  footer .container {
+    display: flex;
+    padding-bottom: 40px;
+    justify-content: start;
+    flex-direction: column;
+    gap: 30px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+  }
 }
